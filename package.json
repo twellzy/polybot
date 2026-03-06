@@ -1,0 +1,38 @@
+{
+  "name": "polybot",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/twellzy/polybot#readme",
+  "bugs": {
+    "url": "https://github.com/twellzy/polybot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twellzy/polybot.git"
+  },
+  "license": "ISC",
+  "author": "twellzy",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsx src/test.ts",
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start:prod": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@polymarket/clob-client": "^5.7.0",
+    "axios": "^1.13.6",
+    "dotenv": "^17.3.1",
+    "ethers": "^5.8.0",
+    "ws": "^8.19.0"
+  }
+}
